@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Commerce store </title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+    
+        <img src="img/logo.png" alt="My Logo" width="100" height="100">
+    
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html"><h2>Home</h2></a></li>
+                <li><a class="active" href="shop.html"><h2>Shop</h2></a></li>
+                <li><a href="about.html"><h2>About</h2></a></li>
+                <li><a href="contact.html"><h2>Contact</h2></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fal fa-shopping-cart"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
+            <i id="bar" class="fas fa-bars"></i>
+        </div>
+    </section>
+    
+    <section id="prodetails" class="section-p1">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="img/product11.jpg" width="100%" alt="">
+                </div>
+                <div class="slide">
+                    <img src="product/product11a.jpg" width="100%" alt="">
+                </div>
+                <div class="slide">
+                    <img src="product/product11b.jpg" width="100%" alt="">
+                </div>
+                <div class="slide">
+                    <img src="product/product11c.jpg" width="100%" alt="">
+                </div>
+            </div>
+            <button class="button prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="button next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        <div class="single-pro-details">
+            <h2>ASUS Vivobook 15</h2>
+            <p style="color: green; font-weight: bold;">Special Price</p>
+            <h3><span style="text-decoration: line-through;">₹ 54,990</span> <span style="color: black;">₹ 31,990</span></h3>
+            <button class="normal">Add To Cart</button>
+            <h3>Product Details</h3>
+            <span>ASUS Vivobook 15, with Backlit Keyboard, Intel Core i3 12th Gen 1215U (8 GB/512 GB SSD/Windows 11 Home) X1504ZA-NJ321WS Thin and Light Laptop (15.6 Inch, Quiet Blue, With MS Office)</span>
+            
+            <div class="pincode-check">
+                <h3>Check Product Availability</h3>
+                <input type="text" id="pincode" placeholder="Enter Pincode" maxlength="6">
+                <button id="check-pincode" onclick="checkPincode()">Check</button>
+                <p id="availability-message"></p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="specifications-table">
+        <div class="container">
+            <div>
+                <!-- New Product Specifications Section -->
+                <h3>Product Specifications</h3>
+                <table class="specifications-table">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Processor</strong></td>
+                        <td>Intel Core i3 12th Gen</td>
+                    </tr>
+                    <tr>
+                        <td><strong>RAM</strong></td>
+                        <td>8 GB</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Storage</strong></td>
+                        <td>512 GB SSD</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Operating System</strong></td>
+                        <td>Windows 11 Home</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Display</strong></td>
+                        <td>15.6 inch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Color</strong></td>
+                        <td>Jet Black</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Office</strong></td>
+                        <td>With MS Office</t>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <section id="product1" class="section-p1">
+        <h2>Top Models</h2>
+        <p>Similiar Product</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='sproduct6.html';">
+                <img src="img/product6.jpg" alt="">
+                <div class="des">
+                    <span>Mac Book</span>
+                    <h4>Apple Mac book Air M2</h4>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>₹76,990</h3>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        
+            <div class="pro" onclick="window.location.href='sproduct9.html';">
+                <img src="img/product9.jpg" alt="">
+                <div class="des">
+                    <span>Mac Book</span>
+                    <h4>Apple Mac book Air M2</h4>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>₹76,990</h3>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+    
+            <div class="pro" onclick="window.location.href='sproduct7.html';">
+                <img src="img/product7.jpg" alt="">
+                <div class="des">
+                    <span>Mac Book</span>
+                    <h4>Apple Mac book Air M2</h4>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>₹76,990</h3>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+    
+    </section>
+    
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="My Logo" width="100" height="100">
+    
+            <h3>Contact</h3>
+            <p><strong>Address:</strong>Upendra Nath Banerjee Road,Parnasree,Behala</p>
+            <p><strong>Phone:</strong> =01 2222 365/ (+91) 01 2345 678</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h3>Follow Us</h3>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h3>About</h3>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>   
+        </div>
+        <div class="col">
+            <h3>My Account</h3>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="copyright">
+            <p> tech- HTML CSS Ecommerce Templates</p>
+        </div>
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            const slides = document.querySelector('.slides');
+            const totalSlides = slides.children.length;
+                if (slideIndex >= totalSlides) {
+                    slideIndex = 0;
+                } else if (slideIndex < 0) {
+                    slideIndex = totalSlides - 1;
+                }
+    
+                slides.style.transform = 'translateX(' + (-slideIndex * 100) + '%)';
+        }
+    
+        // Define changeSlide function in the global scope
+        function changeSlide(n) {
+            slideIndex += n;
+            showSlides();
+        }
+    
+        // Show the first slide on page load
+        showSlides();
+    </script>
+    <script>
+        function checkPincode() {
+            var pincode = document.getElementById("pincode").value;
+            var messageElement = document.getElementById("availability-message");
+    
+            // Assuming the product is available for all pincodes
+            if (pincode.length === 6 && !isNaN(pincode)) {
+                messageElement.innerText = "Product is available in your area!";
+                messageElement.style.color = "navy"; // Set color for available message
+            } else {
+                messageElement.innerText = "Please enter a valid 6-digit pincode.";
+                messageElement.style.color = "red"; // Set color for not available message
+            }
+        }
+        // Add event listener for the Enter key
+        document.getElementById("pincode").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                checkPincode();
+            }
+        });
+    </script>
+    <script src="java.js"></script>
+</body>
+</html>
+    

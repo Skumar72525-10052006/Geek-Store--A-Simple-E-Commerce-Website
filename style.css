@@ -1,0 +1,1402 @@
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px ;
+    background: #E3E6F3 ;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight:600;
+    color: #1a1a1a;
+    transition: 0.3s;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+
+
+/*home page */
+
+#hero{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#video-content{
+    text-align: center;
+    padding: 0 200;
+}
+
+#my-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+
+}
+
+
+
+
+/*features */
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box h4{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box:nth-child(2) h4{
+    background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h4{
+    background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(4) h4{
+    background-color: #f6dbf6;
+}
+
+/*PRODUCT DETAIL */
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product .pro .des span{
+    color: #606063;
+    font-size: 20px;
+}
+
+#product1 .pro .des h4{
+    padding-top: 7px ;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+#product1.pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h3{
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+/* banner margin*/
+
+.section-ml{
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/banner.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover ;
+    background-position: center;
+}
+
+#banner h3{
+    color: #fff;
+    font-size: 20px;
+
+}
+
+#banner h1{
+    color: #fff;
+    font-size: 35px;
+    padding: 10px 0;
+}
+
+#banner h1 span{
+    color: red;
+} 
+
+#banner button:hover{
+    background: #088178;
+    color: #fff;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product .pro .des span{
+    color: #606063;
+    font-size: 20px;
+}
+
+#product1 .pro .des h4{
+    padding-top: 7px ;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+#product1.pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h3{
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h3{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+/* shop page */
+
+#page-header{
+    background-image: url("img/shop\ banner.jpeg");
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.pro-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Adjust this value for spacing between products */
+}
+
+
+.pro {
+    margin: 10px; /* This will create space around each product */
+}
+
+/*single product*/
+
+.container {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: flex-start; /* Align items at the top */
+    margin-top: 20px; /* Add some space above */
+
+}
+
+
+
+.specifications-table {
+    width: 800px;
+    border-collapse: collapse;
+    margin: 0;
+    margin-right: 100px;
+    padding: 0;
+    text-align: center;
+
+}
+
+.specifications-table th, .specifications-table td {
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: left;
+}
+
+.specifications-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.specifications-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping */
+}
+
+.specifications-table tr:hover {
+    background-color: #f1f1f1; /* Highlight on hover */
+}
+
+.pincode-check {
+    margin-top: 20px;
+}
+
+.pincode-check h3{
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+.pincode-check input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.pincode-check button {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#prodetails{
+    display: flex;
+    margin-top: 10px;
+}
+
+.slider {
+    position: relative;
+    max-width: 600px; /* Set the width of the slider */
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.active {
+    background-color: gray;
+}
+
+#prodetails .single-pro-details{
+    margin-left: 20px;
+    width: 50%;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details button{
+    background: #088178;
+    color: #fff;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 35px;
+}
+
+/* about page */
+
+#page-header.about-header{
+    background-image: url("img/skm.jpg");
+    margin-bottom: 0;
+}
+
+#about-head {
+    display: flex;
+    margin-top: 0;
+    align-items: stretch; /* Ensure both content and image stretch to the same height */
+    padding: 20px; /* Increased padding for better spacing */
+    height: auto; /* Full viewport height */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px;
+    margin-bottom: 0; /* Rounded corners */
+}
+
+.content {
+    flex: 1;
+    padding-right: 30px; /* Increased space between text and image */
+    display: flex;
+    flex-direction: column; /* Stack heading and paragraph */
+    justify-content: center; /* Center content vertically */
+}
+
+.content h2 {
+    font-size: 4vw; /* Responsive font size for heading */
+    margin: 0; /* Remove default margin */
+    margin-bottom: 15px; /* Adjusted space below the heading */
+    color: #333; /* Darker color for better readability */
+    text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+.content p {
+    font-size: 2.0vw; /* Responsive font size for paragraph */
+    margin: 10px 0 0 0; /* Add some margin to the paragraph */
+    color: #555; /* Slightly lighter color for paragraph */
+}
+
+.image-container {
+    flex: 1;
+    display: flex; /* Ensure the image container can stretch */
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+    overflow: hidden; /* Ensure no overflow if image is larger */
+    border-radius: 10px; /* Rounded corners for the image container */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.image-container:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.image-container img {
+    width: 40%; /* Ensures image fits within its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    transition: transform 0.3s ease; /* Smooth transition for image hover */
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Slight zoom effect on image hover */
+}
+
+#who-we-are.section-p1 {
+    display: flex; /* Use flexbox for layout */
+    align-items: center;
+    margin-top: 0; /* Center items vertically */
+    padding-top: 0;
+}
+
+.image-container {
+    flex: 1; /* Allow the image container to take up 1 part of the flex space */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.content {
+    flex: 2; /* Allow the content to take up 2 parts of the flex space */
+    padding-left: 20px; /* Add some space between image and text */
+}
+
+h2 {
+    margin: 0; /* Remove default margin from the heading */
+}
+
+p {
+    margin: 10px 0 0; /* Add margin to the paragraph for spacing */
+}
+
+#why-choose-us {
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+    padding: 20px;
+    margin-bottom: 40px; /* Add some padding around the section */
+}
+
+.content {
+    flex: 1; /* Allow text content to take up available space */
+    margin-right: 20px; /* Add some space between text and image */
+}
+
+.image-container {
+    flex: 0 0 400px; /* Set a fixed width for the image container */
+    display: flex; /* Use Flexbox for the image container */
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+}
+
+.image-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+ul {
+    list-style-type: disc; /* Ensure bullet points are displayed */
+}
+
+ul li::marker {
+    font-size: 2em; /* Increase the size of the bullet points */
+    color: #088178; /* Optional: Change the color of the bullets */
+}
+
+#mission-vision.section-p1 {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out the items */
+    padding: 20px;
+    margin-top: 40px; /* Add some padding */
+}
+
+.image-container {
+    flex: 0 0 auto; /* Prevent the image container from growing */
+}
+
+.content {
+    flex: 1; /* Allow the content to take up the remaining space */
+    padding-left: 20px; /* Add some space between image and text */
+}
+
+img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#promise-quality {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+    padding: 20px; 
+    margin-top: 40px;
+}
+
+.content {
+    flex: 1; /* Allow the text to take up available space */
+    padding-right: 20px; /* Add some space between text and image */
+}
+
+.image-container {
+    flex: 0 0 auto; /* Prevent the image container from growing */
+}
+
+.image-container img {
+    width: 300px; /* Set the image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* contact page */
+
+#page-header.contact-header{
+    background-image: url("img/cbanner.jpeg");
+}
+
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details{
+    width: 40%;
+}
+
+#contact-details .details span,
+#form-details form span{
+    font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li i{
+    font-size: 20px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p{
+    margin: 0;
+    font-size: 20px;
+}
+
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#form-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;border: 1px solid #e1e1e1;
+}
+
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form input{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+#ErrorMessage{
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+    resize: none;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+#form-details form button{
+    background-color: #088178;
+    color: #fff;
+}
+
+
+
+/* cart */
+
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+}
+
+#cart table tbody td{
+    font-size: 13px;
+}
+
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3{
+    padding-bottom: 15px;
+}
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button{
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+#subtotal {
+    width: 40%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+/*media  query for mobile devices*/
+
+@media (max-width:799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+    
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-bag{
+        display: none;
+    }
+
+    /*single product*/
+
+    #prodetails {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .slide {
+        width: 100%;
+        height: auto;
+    }
+
+    .slide img{
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    #prodetails .single-pro-details{
+        width: 100%;
+    }
+    
+    #prodetails .single-pro-details h2{
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+    
+    #prodetails .single-pro-details button{
+        background: #088178;
+        color: #fff;
+    }
+
+    button.normal {
+        font-size: 20px;
+    }
+    
+    h4 {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+    }
+
+    #prodetails .single-pro-details span{
+        line-height: 25px;
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    #hero {
+        height: 70vh;
+        background-position: top 30% right 30%;
+
+    }
+
+   /* About sections size adjustments while keeping layout */
+    .section-p1 {
+    padding: 30px 40px;
+}
+
+#about-head,
+#who-we-are,
+#why-choose-us,
+#mission-vision,
+#promise-quality {
+    gap: 20px;
+}
+
+/* Content text size adjustments */
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Image size adjustments */
+.image-container img {
+    width: 250px;
+    height: auto;
+}
+
+#why-choose-us ul li {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+/* Enhanced bullet points styling */
+#why-choose-us ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#why-choose-us ul li {
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+#why-choose-us ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 30px; /* Increased bullet point size */
+    color: #000; /* You can change the color */
+    line-height: 20px;
+}
+
+#why-choose-us ul li strong {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+    #page-header {
+        height: 25vh;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #product1 .pro-container {
+        justify-content: space-between;
+    }
+
+    footer .logo {
+        width: 200px;
+        aspect-ratio: auto 200/200;
+        height: 200px;
+    }
+
+    footer h3 {
+        font-size: 18px;
+        padding-bottom: 0px;
+    }
+
+    footer p {
+        font-size: 18px;
+        margin: 0 0 8px 0;
+    }
+
+    footer .follow i {
+        width: 25px;
+        justify-content: center;
+    }
+
+    footer a {
+        font-size: 16px;
+    }
+
+    #product1 .pro {
+        margin: 15px;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    /* Contact Page */
+
+    #contact-details .details li i {
+        font-size: 14px;
+    }
+
+    #contact-details .details li p {
+        font-size: 15px;
+    }
+
+    #form-details {
+        padding: 40px;
+    }
+
+    #form-details form {
+        width: 40%;
+
+    }
+
+
+    .specifications-table {
+        width: 750px;
+    }
+}
+
+
+@media (max-width: 477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+    #header {
+        padding: 10px 15px;
+    }
+
+    #navbar {
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    #hero {
+        background-position: 55%;
+    }
+
+    #page-header {
+        height: 15vh;
+    }
+
+    .specifications-table {
+        width: 350px;
+        border-collapse: collapse;
+        margin: 0;
+        margin-right: 100px;
+        padding: 0;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        width: 100%;
+    }
+
+    #banner {
+        height: 40vh;
+    }
+
+    footer .copyright {
+        text-align: start;
+    }
+
+    #prodetails .single-pro-details {
+        width: 100%;
+    }
+
+    /* Contact Page */
+
+    #page-header.contact-header {
+        background-image: url("img/cart.jpeg");
+    }
+
+    #contact-details .details {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact-details .map {
+        width: 100%;
+    }
+
+    #contact-details {
+        flex-direction: column;
+    }
+
+    #form-details {
+        margin: 10px;
+        flex-wrap: wrap;
+    }
+
+    #form-details form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    
+
+    /* About sections adjustments */
+    .section-p1 {
+        padding: 20px 10px; /* Reduced padding for mobile */
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center text */
+    }
+
+    #about-head,
+    #who-we-are,
+    #why-choose-us,
+    #mission-vision,
+    #promise-quality {
+        width: 100%; /* Full width for sections */
+        margin-bottom: 10px; /* Space between sections */
+    }
+
+    #about-head .image-container img {
+        width: 30%; /* Make image 50% smaller */
+        height: auto;
+        padding: 0;
+        margin: 5px auto; /* Center the image */
+        display: block; /* Ensures proper centering */
+    }
+
+    .content h2 {
+        font-size: 22px; /* Smaller heading size */
+        margin-bottom: 10px;
+    }
+
+    .content p {
+        font-size: 14px; /* Smaller paragraph text */
+        line-height: 1.5; /* Improved line spacing */
+        padding: 0 10px; /* Padding for readability */
+    }
+
+    .image-container {
+        width: 100%; /* Full width for images */
+        display: flex;
+        justify-content: center; /* Center images */
+        margin: 10px 0; /* Space around images */
+    }
+
+    .image-container img {
+        width: 80%; /* Responsive image size */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Bullet points adjustments */
+    #why-choose-us ul {
+        list-style: none; /* Remove default bullets */
+        padding-left: 0; /* Remove padding */
+    }
+
+    #why-choose-us ul li {
+        font-size: 14px; /* Adjust bullet point text size */
+        margin-bottom: 10px; /* Space between bullet points */
+        padding-left: 25px; /* Indentation for bullet points */
+        position: relative; /* Position for custom bullet */
+    }
+
+    #why-choose-us ul li::before {
+        content: "•"; /* Custom bullet */
+        position: absolute; /* Position the bullet */
+        left: 0; /* Align to left */
+        font-size: 20px; /* Bullet size */
+        color: #000; /* Bullet color */
+        line-height: 14px; /* Align bullet with text */
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 20px; /* Reduced padding */
+        text-align: center; /* Center footer content */
+    }
+
+    footer .col {
+        width: 100%; /* Full width for footer columns */
+        margin-bottom: 15px; /* Space between footer columns */
+    }
+
+    footer h3 {
+        font-size: 16px; /* Smaller footer heading */
+        margin-bottom: 10px;
+    }
+
+    footer p, footer a {
+        font-size: 14px; /* Smaller footer text */
+        margin-bottom: 5px; /* Space between footer links */
+    }
+
+    footer .logo {
+        width: 60px; /* Smaller logo for footer */
+        height: 60px;
+    }
+
+    footer .follow .icon i {
+        padding: 0 8px; /* Space between social icons */
+        font-size: 20px; /* Icon size */
+    }
+
+}
+
